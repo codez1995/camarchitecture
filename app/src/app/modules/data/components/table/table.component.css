@@ -1,0 +1,50 @@
+.table {
+    background: white;
+}
+
+.thead {
+    border: none !important;
+}
+
+th {
+    border: none !important;
+}
+
+.table {
+    background-color: white;
+}
+
+.table-box {
+    margin: 40px 10px;
+}
+
+.table>thead {
+    font-weight: normal;
+    background: white;
+    border: 1px solid gray;
+}
+
+th {
+    font-size: 16px;
+}
+
+td {
+    font-size: 14px;
+}
+
+.table>:not(:last-child)>:last-child>* {
+    border-bottom-color: #423b3b6b;
+}
+
+.table>tbody {
+    vertical-align: inherit;
+    background: white;
+    border: 1px solid #423b3b6b;
+}
+
+.table-bordered>tbody>tr>td,
+.table-bordered>thead>tr>th {
+    /* border: 1px solid #423b3b6b; */
+    border: none;
+    padding: 10px;
+}

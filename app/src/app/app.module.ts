@@ -3,18 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
-
+import { CoreModule } from './modules/core/core.module';
+import { HttpClientModule} from '@angular/common/http';
+import { BaseHttpService } from './modules/shared/services/basehttp.service';
 @NgModule({
   declarations: [
-    AppComponent,
-    DashboardComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    CoreModule
   ],
-  providers: [],
+  providers: [BaseHttpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

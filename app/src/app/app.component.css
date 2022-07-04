@@ -1,0 +1,16 @@
+.web-content-body {
+    width: 100%;
+    display: flex;
+}
+
+.web-sidebar {
+    width: 13%;
+    margin-top: -16px;
+    height: 500px;
+    background: white;
+}
+
+.web-content {
+    width: 80%;
+    padding: 15px 17px;
+}

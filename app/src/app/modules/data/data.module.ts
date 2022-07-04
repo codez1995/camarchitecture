@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TableComponent } from './components/table/table.component';
-import {TableModule} from 'primeng/table';
 
 
 @NgModule({
@@ -9,8 +8,8 @@ import {TableModule} from 'primeng/table';
     TableComponent
   ],
   imports: [
-    CommonModule,
-    TableModule
-  ]
+    CommonModule
+  ],
+  exports:[TableComponent]
 })
 export class DataModule { }

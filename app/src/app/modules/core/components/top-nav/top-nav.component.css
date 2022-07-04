@@ -1,0 +1,8 @@
+.tobar-ul {
+    list-style: none;
+    text-decoration: none;
+    background: white;
+    padding: 14px 35px;
+    border-bottom: 1px solid #80808033;
+    box-shadow: 0 2px 3px -7px #0003, 0 -11px 21px 3px #00000024, 0 9px 33px 8px #00000000;
+}

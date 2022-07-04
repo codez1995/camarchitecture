@@ -1,1 +1,18 @@
-<p>table works!</p>
+<div class="table-box">
+    <table class="table table-bordered table-responsive p-table">
+        <thead>
+            <tr>
+                <th *ngFor="let col of cols">
+                    {{col.header}}
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let row of data">
+                <td *ngFor="let col of cols">
+                    {{row[col.field]}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

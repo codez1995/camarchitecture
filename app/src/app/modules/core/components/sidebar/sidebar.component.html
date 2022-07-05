@@ -6,7 +6,7 @@
     <div class="menu-items">
         <ul class="sidebar-ul">
             <li *ngFor="let menu of menus">
-                <i class="pi pi-home"></i><a href="#">{{menu.label}}</a>
+                <i class="pi pi-{{menu.icon}}"></i><a [href]="menu.routerLink">{{menu.label}}</a>
             </li>
         </ul>
     </div>

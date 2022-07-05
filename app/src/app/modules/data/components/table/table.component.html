@@ -3,14 +3,23 @@
         <thead>
             <tr>
                 <th *ngFor="let col of cols">
-                    {{col.header}}
+                    {{col.label}}
                 </th>
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let row of data">
+            <tr *ngFor="let row of rows">
                 <td *ngFor="let col of cols">
-                    {{row[col.field]}}
+                    <!--    {{row[col.field]}} -->
+                    <p class="action-box" *ngIf="col.field!='action'">
+                        {{row[col.field]}}
+                    </p>
+                    <p class="action-box" *ngIf="col.field=='action'">
+                        <ng-container *ngFor="let item of colActions">
+                            <a href="/accounts?id={{row['clientId']}}"><i  class="{{item.iconName}}"></i></a>
+                            <!-- <i class="pi pi-trash"></i> -->
+                        </ng-container>
+                    </p>
                 </td>
             </tr>
         </tbody>

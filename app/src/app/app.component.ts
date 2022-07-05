@@ -20,11 +20,24 @@ export class AppComponent implements OnInit {
     this.leftMenus.push({
       label:"Dashboard",
       icon:'home',
+      routerLink:"/dashboard",
       items:[{
         name:"",
         icon:"",
         routerLink:""
       }]
-    })
+    },
+    // {
+    //   label:"Account",
+    //   icon:'wallet',
+    //   routerLink:"/accounts",
+    //   items:[{
+    //     name:"",
+    //     icon:"",
+    //     routerLink:""
+    //   }]
+    // }
+    
+    )
   }
 }

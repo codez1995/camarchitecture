@@ -1,0 +1,6 @@
+<div class="layout-content">
+    <div *ngIf="!isContentReady">Loding....</div>
+    <div *ngIf="isContentReady">
+        <ng-content></ng-content>
+    </div>
+</div>

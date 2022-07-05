@@ -11,11 +11,15 @@ export class PageLayoutService {
     public httpService: HttpClient,
     public baseHttp: BaseHttpService
   ) {
-    this.url = `https://cam-application.herokuapp.com/UI-Layout`;
+    this.url = `https://cam-application.herokuapp.com`;
   }
   get(pageName: any) {
-    // let params = new HttpParams();
-    // params = params.set("pageName",pageName);
-    return this.httpService.get(this.url + '/' + pageName)
+    return this.httpService.get(this.url + '/UI-Layout/' + pageName)
+  }
+  getLayout(pageName:any){
+    return this.httpService.get(this.url + '/BasePageUI-matrix/' + pageName)
+  }
+  getClients(){
+    return this.httpService.get(this.url + '/clients' )
   }
 }

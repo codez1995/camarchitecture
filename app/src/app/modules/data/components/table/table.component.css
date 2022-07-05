@@ -44,7 +44,20 @@ td {
 
 .table-bordered>tbody>tr>td,
 .table-bordered>thead>tr>th {
-    /* border: 1px solid #423b3b6b; */
+    /* border: 1px solid #423b3b6b;*/
     border: none;
     padding: 10px;
+}
+
+.pi-trash:before {
+    padding: 10px;
+    color: #9d2020;
+}
+
+.pi-pencil {
+    color: #036028 !important;
+}
+
+.action-box i {
+    cursor: pointer;
 }

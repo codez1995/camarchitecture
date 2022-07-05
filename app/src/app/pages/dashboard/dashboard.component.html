@@ -1,3 +1,4 @@
-<app-breadcrumb></app-breadcrumb>
-<!-- <p>dashboard works!</p> -->
-<app-table>
+<app-layout-content>
+    <app-breadcrumb></app-breadcrumb>
+    <app-table [rows]="clientData" [colActions]="colActions" [cols]="clientColumns"></app-table>
+</app-layout-content>
